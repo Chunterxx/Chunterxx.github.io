@@ -1,0 +1,18 @@
+/* DaTouWang URL: www.datouwang.com */
+body{margin:0;padding:0;overflow:hidden;}
+html {
+  background: linear-gradient(-190deg, #4A4EA4 65%, #E884A1);
+}
+
+.sideBar {
+  position: absolute;
+  top: 5%;
+  right: 10px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>蓉仔七夕节快乐</title>
+
+<!-- <link rel="stylesheet" href="css/index.css"> -->
+
+</head>
+<body>
+<div style="position: absolute; top:0; left:0;">
+    <audio id="audio" src="./assest/love.mp3" loop="loop" autoplay="true"></audio>
+</div>
+<!-- 侧边功能栏区 -->
+<div class="sideBar">
+    <!-- 音乐按钮 -->
+    <div class="music-btn">
+      <svg t="1659279060838" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4094" width="32" height="32"><path d="M875.52 433.152q-7.168-1.024-12.8-10.24t-8.704-33.792q-5.12-39.936-26.112-58.88t-65.024-27.136q-46.08-9.216-81.408-37.376t-58.88-52.736q-22.528-21.504-34.816-15.36t-12.288 22.528l0 44.032 0 96.256q0 57.344-0.512 123.904t-0.512 125.952l0 104.448 0 58.368q1.024 24.576-7.68 54.784t-32.768 56.832-64 45.568-99.328 22.016q-60.416 3.072-109.056-21.504t-75.264-61.952-26.112-81.92 38.4-83.456 81.92-54.272 84.992-16.896 73.216 5.632 47.616 13.312l0-289.792q0-120.832 1.024-272.384 0-29.696 15.36-48.64t40.96-22.016q21.504-3.072 35.328 8.704t28.16 32.768 35.328 47.616 56.832 52.224q30.72 23.552 53.76 33.792t43.008 18.944 39.424 20.992 43.008 39.936q23.552 26.624 28.672 55.296t0.512 52.224-14.848 38.4-17.408 13.824z" p-id="4095" data-spm-anchor-id="a313x.7781069.0.i6" class="selected" fill="#1296db"></path></svg>
+    </div>
+    <span style="color: white;font-size:12px;">点我听首歌~</span>
+    <div class="screen-btn">
+      <svg t="1659611412086" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2515" width="32" height="32"><path d="M240.8 196l178.4 178.4-45.6 45.6-177.6-179.2-68 68V128h180.8l-68 68z m133.6 408.8L196 783.2 128 715.2V896h180.8l-68-68 178.4-178.4-44.8-44.8zM715.2 128l68 68-178.4 178.4 45.6 45.6 178.4-178.4 68 68V128H715.2z m-65.6 476.8l-45.6 45.6 178.4 178.4-68 68H896V715.2l-68 68-178.4-178.4z" p-id="2516" fill="#1296db"></path></svg>
+    </div>
+    <span style="color: white;font-size:12px;">全屏更好看~</span>
+</div>
+<!-- <script src="js/three.min.js"></script> -->
+<script src="js/datouwang.js" type="module"></script>
+</body>
+
+<style>
+body{margin:0;padding:0;overflow:hidden;}
+
+html {
+  background: linear-gradient(-190deg, #4A4EA4 65%, #E884A1);
+}
+.sideBar {
+  position: absolute;
+  top: 5%;
+  right: 10px;
+}
+.music-btn {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.screen-btn {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.music-btn-move {
+    animation: moveMusic 4s infinite ease-in-out;
+}
+@keyframes moveMusic {
+    100%{transform:rotate(360deg);}
+}
+</style>
+</html>
